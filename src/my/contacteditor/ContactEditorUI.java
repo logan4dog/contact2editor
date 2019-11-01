@@ -194,7 +194,7 @@ public class ContactEditorUI extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add insert contact code here:
-        
+        System.out.println("button was clicked!");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
