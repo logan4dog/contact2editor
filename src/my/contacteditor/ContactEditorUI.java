@@ -15,6 +15,7 @@ public class ContactEditorUI extends javax.swing.JFrame {
     /** Creates new form ContactEditorUI */
     public ContactEditorUI() {
         initComponents();
+        jList1Fill();
     }
 
     /** This method is called from within the constructor to
@@ -197,6 +198,14 @@ public class ContactEditorUI extends javax.swing.JFrame {
         System.out.println("button was clicked!");
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jList1Fill(){
+        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Bananas", "Apples", "Pears", "Grapes", "Oranges" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+  
+    }
     /**
      * @param args the command line arguments
      */
@@ -228,8 +237,10 @@ public class ContactEditorUI extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new ContactEditorUI().setVisible(true);
+                
             }
         });
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
